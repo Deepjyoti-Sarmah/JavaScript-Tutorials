@@ -28,13 +28,22 @@ var str = "iNeuron is located is Mars";
 // var a = "Javascript   ";
 // var c = a.trim();
 
-var c= str.slice(-1); //s
+// var c= str.slice(-1); //s
 
 // var c = str.substring(2,5);  which index want , from where dont want
 
 // var c = str.substr(2,5); //euron
 
-var c = str.split(" ");
+// var c = str.split(" ");
+
+// var a = 10;
+// var c = a.toString();
+
+// var c = str.replace("iNeuron", "Space");
+
+// var c = str.replace(/is/g, "are");
+
+
 
 // console.log(a);
 console.log(c);
