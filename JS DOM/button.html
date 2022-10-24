@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>button</title>
+        <h1> DOM class</h1>
+    </head>
+    <body> 
+        <script type="text/javascript">
+           function buttonOnClick()
+           {
+               //document represents the global dom object
+               var str = document.getElementById("heading").innerHTML= "hello";
+            //    alert(str);
+           }
+
+           function buttonOnClickPara()
+           {
+               //document represents the global dom object
+               var str2 = document.getElementById("para").innerHTML= "Blockchain";
+            //    alert(str);
+           }
+        </script>
+        
+        <button onclick="buttonOnClick()">Click Me</button>
+        <h2 id="heading">Display text</h2>
+
+        <button onclick="buttonOnClickPara()">Click</button>
+        <p id="para">Initial Test</p>
+    </body>
+</html>
