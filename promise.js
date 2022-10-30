@@ -7,12 +7,12 @@ let promise  = new Promise(function(resolve , reject ) {
         resolve("Hurray!Jack and Jill Back with water");
     }, 2000);
 
-    // setTimeout(function() {
-    //     reject(
-    //         //throwing an error
-    //         new Error("jack fall down and broke his crown, and jill came trumbling after")
-    //     );
-    // }, 2000);
+    setTimeout(function() {
+        reject(
+            //throwing an error
+            new Error("jack fall down and broke his crown, and jill came trumbling after")
+        );
+    }, 2000);
 
 });
 
