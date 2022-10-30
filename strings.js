@@ -41,9 +41,7 @@ var str = "iNeuron is located is Mars";
 
 // var c = str.replace("iNeuron", "Space");
 
-// var c = str.replace(/is/g, "are");
-
-
+var c = str.replace(/is/g, "are");
 
 // console.log(a);
 console.log(c);
