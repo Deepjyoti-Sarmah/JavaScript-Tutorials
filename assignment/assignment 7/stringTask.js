@@ -1,7 +1,6 @@
 // 10. Given a String S, achieve following tasks
 // a) Convert the String into upper case.
 // b) Convert only the first character to uppercase.
-
 // c) Convert the String into lower case.
 // d) Break the string into two halves and swap them.
 // e) Count the repeating characters.
