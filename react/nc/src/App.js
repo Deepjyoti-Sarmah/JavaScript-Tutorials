@@ -5,7 +5,10 @@ import './index.css';
 // import SetUp from './UseStateObject';
 // import SetUp from './UseEffectBasics';
 // import SetUp from './ConditionRender';
-import SetUp from './UseEffectCleanUp';
+// import SetUp from './UseEffectCleanUp';
+// import SetUp from './ShortCircuit';
+// import SetUp from './ShowHide';
+import SetUp from './ControlledInput';
 
 function App() {
   return (
