@@ -8,7 +8,8 @@ import './index.css';
 // import SetUp from './UseEffectCleanUp';
 // import SetUp from './ShortCircuit';
 // import SetUp from './ShowHide';
-import SetUp from './ControlledInput';
+// import SetUp from './ControlledInput';
+import SetUp from './UseRefBasics';
 
 function App() {
   return (
