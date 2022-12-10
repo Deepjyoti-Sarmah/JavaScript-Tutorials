@@ -1,29 +1,48 @@
-import React, {useState} from 'react'
+import React, { Fragment } from 'react'
+import Provider from './provider.js'
+import Context from './context.js';
 
-const GrandChild = (props) => {
-  return (
-    <div>
-      <h3>GrandChild: </h3>
-      <Child course={props.course} />
-    </div>
-  )
+const Child1 = () => {
+  console.log("Child");
+  return <GrandChild1></GrandChild1>
 }
 
-const Child = (props) => {
+const GrandChild1 = () => {
+  console.log("GChild");
+  return <GreatGrandChild1></GreatGrandChild1>
+}
+
+const GreatGrandChild1 = () => {
+  
+  console.log("GGChild");
+
   return (
-    <div>
-      <h2>Child:  {props.course} </h2>
-    </div>
+    <Context.Consumer>
+      {
+        (context) => (
+          <Fragment>
+            <h4>Actually here consuming</h4>
+            <p>Mission name: {context.data.mname}</p>
+            <p>Accept state: {context.data.accept}</p>
+            <button onClick={context.isMissionAccepted}>Choose to accept</button>
+          </Fragment>
+        )
+      }
+    </Context.Consumer>
   )
 }
 
 const App = () => {
-  const [courseName, setCourseName] = useState('React.js');
+  
   return (
-    <div>
-      <h1>INeuron.ai</h1>
-      <GrandChild course = {courseName}/>
-    </div>
+    <>
+      <div>
+        <h2>Context API Ex 2</h2>
+        <Provider child= "ineuron">
+          <Child1/>
+        </Provider>
+      </div>
+    </>
   )
 }
 
